@@ -4,16 +4,32 @@ public class Contato {
 	private String telefone;
 	
 	public Contato(){
-		this.nome = "-";
+		this.setNome("-");
 	}
 	
 	public Contato(String umNome){
-		this.nome=umNome;
+		this.setNome(umNome);
 	}
 	
 	public Contato(String umNome, String umTelefone){
-		this.nome=umNome;
-		this.telefone=umTelefone;
+		this.setNome(umNome);
+		this.setTelefone(umTelefone);
+	}
+
+	public String getTelefone() {
+		return telefone;
+	}
+
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 	
 }
